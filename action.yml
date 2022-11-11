@@ -10,4 +10,4 @@ on:
       - unlabeled
 runs:
   using: 'docker'
-  image: '/action/Dockerfile'
+  image: 'Dockerfile'
