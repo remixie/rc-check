@@ -1,4 +1,5 @@
-name: A workflow to check for rc packages
+name: RC Check
+description: A workflow to check for rc packages
 on:
   pull_request_target:
     types:
@@ -14,4 +15,4 @@ jobs:
       - name: Checks this action for errors
         uses: actions/checkout@v1
       - name: check for rc packages
-        uses: ./action
+        uses: /action
