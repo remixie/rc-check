@@ -8,7 +8,7 @@ on:
       - labeled
       - unlabeled
     paths:
-    - 'package.json'
+    - './package.json'
 jobs:
   release-candidate:
     runs-on: ubuntu-latest
