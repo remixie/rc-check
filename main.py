@@ -3,7 +3,7 @@
 
 if __name__ == '__main__':
 
-    with open(r'/package.json', 'r') as file:
+    with open(r'package.json', 'r') as file:
     # read all content of a file
         content = file.read()
         print(content)
