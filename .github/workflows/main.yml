@@ -13,7 +13,7 @@ jobs:
   generate-metadata:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - name: Add list of files to a metadata file and generate Readme
-        uses: ./action
+      - name: Checks this action for errors
+        uses: actions/checkout@v1
       - name: check for rc packages
+        uses: ./action
