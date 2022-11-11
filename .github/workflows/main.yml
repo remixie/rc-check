@@ -1,0 +1,19 @@
+name: A workflow to check for rc packages
+on:
+  pull_request_target:
+    types:
+      - opened
+      - edited
+      - synchronize
+      - labeled
+      - unlabeled
+    paths:
+    - 'package.json'
+jobs:
+  generate-metadata:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Add list of files to a metadata file and generate Readme
+        uses: ./action
+      - name: check for rc packages
