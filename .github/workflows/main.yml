@@ -9,7 +9,7 @@ on:
       - unlabeled
 
 jobs:
-  generate-metadata:
+  rc-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checks this action for errors
