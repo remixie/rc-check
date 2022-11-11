@@ -8,6 +8,6 @@ FROM python:3.11.0
 #LABEL "repository"="https://github.com/remixie/prerelease-test/action"
 #LABEL "homepage"=""
 #LABEL "maintainer"="Francisco Salinas <remixielive@live.com>"
-
+ 
 ADD main.py /main.py
 ENTRYPOINT ["python", "/main.py"]
