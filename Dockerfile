@@ -9,5 +9,5 @@ FROM python:3.11.0
 #LABEL "maintainer"="Francisco Salinas <remixielive@live.com>"
 
 COPY . /
-CMD ["ls"]
-ENTRYPOINT ["python", "main.py"]
+CMD ls
+ENTRYPOINT ["python", "/main.py"]
