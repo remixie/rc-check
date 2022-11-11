@@ -8,9 +8,9 @@ on:
       - labeled
       - unlabeled
     paths:
-    - 'package.json'
+    - '/package.json'
 jobs:
-  generate-metadata:
+  rc-check:
     runs-on: ubuntu-latest
     steps:
       - name: Checks this action for errors
