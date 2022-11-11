@@ -8,6 +8,7 @@ if __name__ == '__main__':
         with open(file_path, 'r') as file:
         # read all content of a file
             content = file.read()
+            print(content)
             # check if string present in a file
             if word in content:
                 print('Release Candidate found in package.json! Use only live versions of packages.')
