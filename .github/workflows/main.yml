@@ -7,8 +7,6 @@ on:
       - synchronize
       - labeled
       - unlabeled
-    paths:
-    - './package.json'
 jobs:
   release-candidate:
     runs-on: ubuntu-latest
