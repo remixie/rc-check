@@ -14,3 +14,4 @@ if __name__ == '__main__':
                 sys.exit(1)
 
     search_str(r'/package.json', '-rc.')
+
