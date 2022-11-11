@@ -9,10 +9,5 @@ on:
       - labeled
       - unlabeled
 runs:
-  using: "composite"
-  steps:
-    steps:
-      - name: Checks this action for errors
-        uses: actions/checkout@v1
-      - name: check for rc packages
-        uses: /action
+  using: 'docker'
+  image: 'Dockerfile'
