@@ -8,7 +8,7 @@ on:
       - labeled
       - unlabeled
     paths:
-    - '/package.json'
+    - 'package.json'
 jobs:
   rc-check:
     runs-on: ubuntu-latest
