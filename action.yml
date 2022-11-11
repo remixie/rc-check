@@ -8,9 +8,9 @@ on:
       - synchronize
       - labeled
       - unlabeled
-jobs:
-  release-candidate:
-    runs-on: ubuntu-latest
+runs:
+  using: "composite"
+  steps:
     steps:
       - name: Checks this action for errors
         uses: actions/checkout@v1
