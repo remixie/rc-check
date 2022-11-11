@@ -13,4 +13,4 @@ if __name__ == '__main__':
                 print('Release Candidate found in package.json! Use only live versions of packages.')
                 sys.exit(1)
 
-    search_str(r'../package.json', '-rc.')
+    search_str(r'/package.json', '-rc.')

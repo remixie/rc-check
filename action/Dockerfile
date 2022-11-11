@@ -5,9 +5,10 @@ LABEL "com.github.actions.description"="Automatically error when RC packages are
 LABEL "com.github.actions.icon"="corner-up-left"
 LABEL "com.github.actions.color"="green"
 
-LABEL "repository"="https://github.com/remixie/prerelease-test/action"
-LABEL "homepage"=""
-LABEL "maintainer"="Francisco Salinas <remixielive@live.com>"
-
+#LABEL "repository"="https://github.com/remixie/prerelease-test/action"
+#LABEL "homepage"=""
+#LABEL "maintainer"="Francisco Salinas <remixielive@live.com>"
+ 
+ADD ../package.json /package.json
 ADD main.py /main.py
 ENTRYPOINT ["python", "/main.py"]
