@@ -1,14 +1,15 @@
 name: A workflow to check for rc packages
 on:
-  pull_request_target:
-    types:
-      - opened
-      - edited
-      - synchronize
-      - labeled
-      - unlabeled
+  push:
+  #pull_request_target:
+  #  types:
+  #    - opened
+  #    - edited
+  #    - synchronize
+  #    - labeled
+  #    - unlabeled
     paths:
-    - 'package.json'
+    - './package.json'
 jobs:
   release-candidate:
     runs-on: ubuntu-latest
