@@ -10,7 +10,7 @@ on:
     paths:
     - 'package.json'
 jobs:
-  rc-check:
+  release-candidate:
     runs-on: ubuntu-latest
     steps:
       - name: Checks this action for errors
