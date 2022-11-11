@@ -9,6 +9,6 @@ LABEL "com.github.actions.color"="green"
 #LABEL "homepage"=""
 #LABEL "maintainer"="Francisco Salinas <remixielive@live.com>"
  
-ADD ./package.json /package.json
+ADD /package.json /package.json
 ADD main.py /main.py
 ENTRYPOINT ["python", "/main.py"]
