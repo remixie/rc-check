@@ -7,7 +7,8 @@ on:
       - synchronize
       - labeled
       - unlabeled
-
+    paths:
+    - '/package.json'
 jobs:
   rc-check:
     runs-on: ubuntu-latest
