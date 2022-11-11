@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
+import os
 
 if __name__ == '__main__':
 
+    os.listdir('dir_path')
     with open(r'package.json', 'r') as file:
     # read all content of a file
         content = file.read()
